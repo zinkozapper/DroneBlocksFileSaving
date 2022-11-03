@@ -7,12 +7,20 @@ How to install:
 4) Select the init method.
 5) Follow prompts.
 
-Use/Notes
+Use/Notes:
+```
 Make sure to close out of DroneBlocks before running any functions (if you do not do this it could corrupt your save)!
+
 Use the load function to load from folder into droneblocks.
+
 Use the save function to save from droneblocks into folder.
-Make sure to save your project before you load a new one. **There is no auto save**
+
+Make sure to save your project before you load a new one. 
+```
+***THERE IS NO AUTOSAVE!***
+
 
 
 Saves are stored in the %appdata%\Droneblocks\saves\routes\ directory.
+
 Feel free to fork the project or just edit the file to fit your own needs!
