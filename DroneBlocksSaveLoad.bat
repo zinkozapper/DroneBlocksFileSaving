@@ -32,7 +32,7 @@ goto:main
 
 :load
 set /p rt=What folder do you want to load from (1-%count%)?
-robocopy %appdata%\DroneBlocks\saves\routes\db%rt% "%appdata%\DroneBlocks\Local Storage" /mir >nul
+robocopy "%appdata%\DroneBlocks\saves\routes\db%rt%" "%appdata%\DroneBlocks\Local Storage" /mir >nul
 echo Load successful!
 pause
 goto:EOF
@@ -40,7 +40,7 @@ goto:EOF
 
 :save
 set /p rt=Which folder do you want to save to (1-%count%)?
-robocopy "%appdata%\DroneBlocks\Local Storage"  %appdata%\DroneBlocks\saves\routes\db%rt% /mir >nul
+robocopy "%appdata%\DroneBlocks\Local Storage"  "%appdata%\DroneBlocks\saves\routes\db%rt%" /mir >nul
 echo Save successful!
 pause
 goto:EOF
@@ -70,7 +70,7 @@ goto:pcg
 
 
 :needToInit
-if %method%==1 goto:init
+if %method%==3 goto:init
 echo You need to initialize first!
 goto:pcg
 
